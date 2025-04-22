@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIVERSION RP! - Streamers</title>
+    <title>DIVERSION RP! - Our Streamers</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="dist/styles.css" rel="stylesheet">
     <style>
@@ -84,10 +84,10 @@
             <li><a href="rules.html" class="hover:text-purple-400">Rules</a></li>
             <li><a href="streams.html" class="hover:text-purple-400">Streams</a></li>
             <li><a href="showcase.html" class="hover:text-purple-400">Showcase</a></li>
-            <li><a href="support.html" class="hover:text-purple-400">Supporters</a></li>
-            <li><a href="contact.html" class="hover:text-purple-400">Contact</a></li>
+            <li><a href="support.html" class="hover:text-purple-400">About</a></li>
+
         </ul>
-        <a href="https://discord.gg/JWJaBcpP8R" target="_blank">
+        <a href="https://discord.gg/diversionrp" target="_blank">
             <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full shadow-lg hover:from-pink-600 hover:to-purple-600">Join Today!</button>
         </a>
         <div class="md:hidden flex items-center">
@@ -104,8 +104,8 @@
         <li><a href="rules.html" class="block text-center hover:text-purple-400">Rules</a></li>
         <li><a href="streams.html" class="block text-center hover:text-purple-400">streams</a></li>
         <li><a href="showcase.html" class="block text-center hover:text-purple-400">Showcase</a></li>
-        <li><a href="support.html" class="block text-center hover:text-purple-400">Supporters</a></li>
-        <li><a href="contact.html" class="block text-center hover:text-purple-400">Contact</a></li>
+        <li><a href="support.html" class="block text-center hover:text-purple-400">About</a></li>
+
     </ul>
 </header>
 
@@ -113,9 +113,15 @@
     <h1 class="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
         Our Streamers
     </h1>
-
+    <h2 class="text-4xl font-extrabold text-center mb-8 bg-clip-text">Twitch</h2>
     <!-- Streamer Grid -->
     <div id="streamer-grid" class="streamer-grid">
+        <!-- Streamer items will be injected here by JavaScript -->
+    </div>
+    <br>
+    <h2 class="text-4xl font-extrabold text-center mb-8 bg-clip-text">Kick</h2>
+    <!-- Streamer Grid -->
+    <div id="streamer-gridKick" class="streamer-grid">
         <!-- Streamer items will be injected here by JavaScript -->
     </div>
 </main>
@@ -123,27 +129,31 @@
 <footer class="bg-gray-800 p-6">
     <div class="container mx-auto flex justify-between items-center">
         <div class="flex space-x-6">
-            <a href="http://play.justrp.cloud:40120/" class="hover:text-teal-400">TXAdmin</a>
-            <a href="https://fivemanage.com/dashboard/ascendancerp" class="hover:text-teal-400">Fivemange</a>
+            <a href="https://play.diversion-rp.com:40120" class="hover:text-teal-400">TXAdmin</a>
+            <a href="https://fivemanage.com/dashboard/diversionrp" class="hover:text-teal-400">Fivemange</a>
         </div>
         <div class="flex space-x-6 text-2xl">
-            <a href="https://discord.gg/JWJaBcpP8R" class="hover:text-teal-400"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://discord.gg/diversionrp" class="hover:text-teal-400"><i class="fa-brands fa-discord"></i></a>
         </div>
     </div>
 </footer>
 
 <script type="text/javascript">
     const twitchChannels = [
+        { channel: "crazy_switch", label: "Crazy Switch" },
         { channel: "xipiebb", label: "Xipiebb" },
         { channel: "davilletv", label: "DavilleTV" },
-        { channel: "crazy_switch", label: "Crazy Switch" },
+        { channel: "corenerstone_dev", label: "Cornerstone (Max)" },
+
     ];
 
     const kickChannels = [
         { username: "crazy_switch0", label: "Crazy Switch" },
+        { channel: "cornerstone-dev", label: "Cornerstone (Max)" },
     ];
 
     const streamerGrid = document.getElementById('streamer-grid');
+    const streamerGridKick = document.getElementById('streamer-gridKick');
 
     // Inject Twitch Streams
     twitchChannels.forEach((streamer, index) => {
@@ -167,7 +177,7 @@
             height: "180px",
             channel: streamer.channel,
             autoplay: false,
-            parent: ["www.justrp.cloud"]
+            parent: ["www.diversion-rp.com"]
         });
     });
 
@@ -189,7 +199,7 @@
 
         streamerItem.appendChild(kickEmbed);
         streamerItem.appendChild(streamerLabel);
-        streamerGrid.appendChild(streamerItem);
+        streamerGridKick.appendChild(streamerItem);
     });
 </script>
 </body>
