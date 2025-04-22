@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+    <title>Just RP! - Rules</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="dist/styles.css" rel="stylesheet">
+    <style>
+        .logo {
+            height: 50px; /* Adjust the height as needed */
+            width: auto; /* Maintains aspect ratio */
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container:hover .logo {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .logo {
+            height: 50px; /* Adjust the height as needed */
+            width: auto; /* Maintains aspect ratio */
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-container:hover .logo {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white font-sans flex flex-col min-h-screen">
+<!-- Header -->
+<header class="bg-gray-800 p-6 shadow-lg">
+    <nav class="container mx-auto flex justify-between items-center">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo" class="logo">
+        </div>
+        <ul id="nav-links" class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-purple-400">Home</a></li>
+            <li><a href="rules.html" class="hover:text-purple-400">Rules</a></li>
+            <li><a href="streams.html" class="hover:text-purple-400">Streams</a></li>
+            <li><a href="showcase.html" class="hover:text-purple-400">Showcase</a></li>
+            <li><a href="support.html" class="hover:text-purple-400">Supporters</a></li>
+            <li><a href="contact.html" class="hover:text-purple-400">Contact</a></li>
+        </ul>
+        <a href="https://discord.gg/JWJaBcpP8R" target="_blank">
+            <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full shadow-lg hover:from-pink-600 hover:to-purple-600">Join Today!</button>
+        </a>
+        <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+    <ul id="mobile-menu" class="hidden flex-col space-y-4 mt-4 md:hidden">
+        <li><a href="index.html" class="block text-center hover:text-purple-400">Home</a></li>
+        <li><a href="rules.html" class="block text-center hover:text-purple-400">Rules</a></li>
+        <li><a href="streams.html" class="block text-center hover:text-purple-400">streams</a></li>
+        <li><a href="showcase.html" class="block text-center hover:text-purple-400">Showcase</a></li>
+        <li><a href="support.html" class="block text-center hover:text-purple-400">Supporters</a></li>
+        <li><a href="contact.html" class="block text-center hover:text-purple-400">Contact</a></li>
+    </ul>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto py-10 flex-grow">
+    <h1 class="text-4xl font-bold mb-6">Rules & Guidelines</h1>
+    <!-- Explanation Paragraph -->
+    <div class="text-center mb-6 text-white">
+        <p class="text-lg font-semibold">
+            Before filling out an application to join the city on Discord, everyone must thoroughly review these rules. The application process will include checks of your knowledge of the rules, so make sure you understand them well. "I did not know" will not be an acceptable excuse for a rule break.
+        </p>
+    </div>
+
+    <div class="accordion">
+        <!-- City Vision and Compliance -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section1">
+                City Vision and Compliance
+            </h2>
+            <div id="section1" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <p>
+                    Our city is designed as a haven for players who prioritize role play and storytelling. We are dedicated
+                    to creating a vibrant, immersive environment where creativity and character-driven narratives can flourish.
+                </p>
+                <p class="mt-4">
+                    To ensure a safe and respectful community, we strictly adhere to all terms of service and guidelines.
+                    This includes avoiding the use of real-life cars, brands, clothing, or any items that could breach the
+                    CFX or Rockstar Terms of Service, Community Guidelines, EULA, or Creator Program License Agreement (PLA).
+                    Our commitment is to provide a compliant and enjoyable experience for everyone.
+                </p>
+            </div>
+        </div>
+
+        <!-- General Rules with Collapsible Sections -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section2">
+                General Rules
+            </h2>
+            <div id="section2" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <!-- Collapsible Section 1: Age Requirement -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection1">
+                        Age Requirement
+                    </h3>
+                    <div id="subsection1" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Just RP is an 18+ server, without exception.</p>
+                        <p class="mt-2">No exceptions will be made to the age requirement, under any circumstances—including parental consent or staff recommendations. Moderation reserves the right to request age verification from any player. Refusal to provide proof of age will result in immediate removal from the server.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 2: Language -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection2">
+                        Language
+                    </h3>
+                    <div id="subsection2" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>All players must be able to understand, speak, and type in English. A working microphone is also required. We are committed to inclusivity and welcome individuals with disabilities. If a disability affects your ability to use a microphone, please submit a general support ticket in our Discord to explain your situation.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 3: Respectful Communication -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection3">
+                        Respectful Communication on Official Platforms
+                    </h3>
+                    <div id="subsection3" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>All communications related to our server, whether in-game or on our official platforms (including streamer channels), must be respectful. Refrain from sending angry or offensive messages in response to in-game events.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 4: In-Character Interaction -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection4">
+                        In-Character Interaction
+                    </h3>
+                    <div id="subsection4" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>We understand that in-character (IC) interactions may involve trash talk or abrasive behavior as part of the role-playing experience. This is acceptable as long as it remains within character and does not cross the line into disrespect or target players out of character (OOC).</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 5: Boundary Between IC and OOC -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection5">
+                        Boundary Between IC and OOC
+                    </h3>
+                    <div id="subsection5" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Crossing the line from in-character (IC) to out-of-character (OOC) behavior, especially when it becomes disrespectful or offensive, is strictly forbidden. Maintaining this distinction is crucial to prevent in-game dynamics from escalating into personal conflicts or violations of our community guidelines.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 6: Private Interactions -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection6">
+                        Private Interactions
+                    </h3>
+                    <div id="subsection6" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Protecting our player base is crucial to the growth of our city. While private messages between members are generally outside our moderated scope, serious issues like stalking or harassment will be taken very seriously. All reports will be thoroughly investigated by senior staff, and if the allegations are confirmed, the consequences will be immediate and severe.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 7: No Trolling -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection7">
+                        No Trolling
+                    </h3>
+                    <div id="subsection7" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Trolling, defined as behavior intended to provoke, disturb, or disrupt the experience of others, is strictly prohibited. In a role play environment like FiveM, this includes but is not limited to actions such as repeatedly killing a player to demand large sums of cash, or consistently retaliating as soon as the cooldown expires. Such actions undermine the role play experience and will not be tolerated.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 8: Recruitment/Advertising -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection8">
+                        Recruitment/Advertising Other Servers/Self-Promotion
+                    </h3>
+                    <div id="subsection8" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Recruiting for or advertising other servers in our official Discord channels or in-game is strictly prohibited. Our goal is to maintain a high-quality experience that makes you want to stay and play here, rather than pull players away.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 9: Language Policy -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection9">
+                        Language
+                    </h3>
+                    <div id="subsection9" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>This is an 18+ adult server, and we do not police the language of our players. If you are uncomfortable with foul language, that is something you will need to manage personally. While there are no specific restrictions on language, it must always be in character and never directed at another player personally. The only exception to this rule is covered under our Zero-Tolerance Policy.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 10: Zero-Tolerance Policy -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection10">
+                        Zero-Tolerance Policy
+                    </h3>
+                    <div id="subsection10" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Our server enforces a ZERO tolerance policy for any sexual misconduct. Violations will result in immediate disciplinary action, and all reports of sexual harassment will be thoroughly investigated.</p>
+                        <p class="mt-2">Adult Emotes: Adult emotes are available for use with a consensual party but must remain strictly in character (IC) and within the boundaries of role play. Any misuse or violations will be addressed at the discretion of the staff.</p>
+                        <p class="mt-2">Prohibited Behavior: Rape scenes of any kind are forbidden. Even with consent from other players, engaging in such behavior will result in an immediate, with no appeals ban for all involved. Role playing any form of sexual assault, including non-consensual touching or similar acts, is also strictly prohibited and will lead to severe disciplinary action following a full investigation by Senior Administration. This behavior will not be tolerated.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 11: Exploiting Bugs -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection11">
+                        Exploiting Bugs
+                    </h3>
+                    <div id="subsection11" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Exploiting in-game bugs for personal gain is strictly prohibited. If something seems too good to be true, it probably is. Please report any bugs you encounter by submitting a ticket in Discord.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section 12: Staff Roles -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection12">
+                        Staff & Server Leadership Roles
+                    </h3>
+                    <div id="subsection12" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Staff members may hold multiple roles within our server, but they must consistently meet the expectations associated with each position. Staff and department/group leaders are required to keep all sensitive server information—such as documents, player data, designs, and plans—strictly confidential and solely for use within our server. Any documents or assets created, obtained, or related to our server (e.g., departmental, administrative, or server business materials) are owned by the server owner and must remain intact and unaltered upon a staff member’s departure.</p>
+                        <p class="mt-2">Staff members are allowed to serve in staff roles within our city even if they hold similar positions in other cities. However, we hold our staff to the highest standards of integrity. Any staff member found to be sharing confidential information from Just RP with other cities will be immediately removed from their position. Depending on the severity of the breach, they may also face removal from the server entirely. We expect all staff members to approach their roles with honesty and strong character.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Streaming and Video -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section3">
+                Streaming and Video
+            </h2>
+            <div id="section3" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <p>Our city encourages players to share their experiences freely. You are welcome to stream, post TikToks, create YouTube videos, or share other content on social media without needing to go through tedious applications or possess a streaming background. We believe that anyone who wishes to stream should have the freedom to do so. Additionally, there is no requirement for our staff members to be moderators in your streams.</p>
+                <p class="mt-4">It is your responsibility to adhere to the guidelines and community standards of your chosen streaming platform. However, we have a few guidelines that we believe will benefit both Just RP and the streamer:</p>
+
+                <h3 class="text-xl font-semibold mt-4">Not a Streamer-Focused City</h3>
+                <p>Our city is not built around streamers, nor is it owned by streamers. The success and stability of our city do not rely on the viewership or income of any individual streamer.</p>
+
+                <h3 class="text-xl font-semibold mt-4">Follow All Server Rules</h3>
+                <p>Streamers are required to follow ALL server rules without exception. No special accommodations will be made to enhance your stream. Streamers are subject to the same moderation guidelines as non-streamers.</p>
+
+                <h3 class="text-xl font-semibold mt-4">Do Not Show Secret Locations</h3>
+                <p>Locations considered secret—such as labs, material gathering spots, money laundering areas, black markets, etc.—should not be intentionally shown on your stream. Keeping these aspects of the city hidden enhances the overall role play experience for everyone.</p>
+
+                <h3 class="text-xl font-semibold mt-4">City Branding</h3>
+                <p>While we hope Just RP becomes your primary city, we do not restrict you from streaming other cities as well. However, when you do stream Just RP, we ask that you include the city’s name in your stream title. If possible, please also feature our logo or branding in any streams, videos, shorts, or other content you share.</p>
+            </div>
+        </div>
+
+
+        <!-- Role play Rules -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section4">
+                Role play Rules
+            </h2>
+            <div id="section4" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <p>Role play is the foundation of our city. While we provide opportunities for crimes, drugs, fast cars, guns, and more, these elements are intended to enrich your role play stories, not dominate them. We do not support a "100k or Die" mentality or aim to be an enhanced version of GTA Online—there are plenty of other servers for that. If that’s the experience you’re seeking, we encourage you to explore those options.</p>
+                <p class="mt-4">The following rules are established to help you stay within the boundaries of meaningful role play:</p>
+
+                <!-- Collapsible Section: Failure to Role-play/Unrealistic RP (FailRP) -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection13">
+                        Failure to Role-play/Unrealistic RP (FailRP)
+                    </h3>
+                    <div id="subsection13" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Failing to role-play (FailRP) is strictly prohibited and taken very seriously. Just RP is a realistic role-play server, and you are expected to stay in character and actively participate in role-play at all times. If rules are broken, your priority should be to continue role-playing through the situation and report the issue afterward.</p>
+                        <p class="mt-2">FailRP includes, but is not limited to, the following behaviors:</p>
+                        <ul class="list-disc ml-6">
+                            <li>Ignoring Role-play Scenarios: Refusing to engage in or acknowledge role-play situations that involve your character.</li>
+                            <li>Breaking Character (OOC): Going out of character without a valid reason, particularly during active role-play scenes. OOC should never be used to end or alter the direction of a scene.</li>
+                            <li>Unrealistic Actions: Engaging in actions that would be impossible or highly unrealistic in real life, such as repeatedly jumping off buildings without injury, pulling large weapons out of nowhere, taking on a group when outnumbered, or failing to fear for your life. Driving cars in unrealistic ways, or at unrealistic speeds.</li>
+                            <li>Using OOC to Influence RP: Using OOC chat to influence or control the direction of the role-play instead of letting the scene develop naturally.</li>
+                            <li>Failing to Use Scripted Features: Not utilizing available in-game scripts and features designed to enhance realism, such as ignoring injury systems, vehicle damage, or other mechanics.</li>
+                        </ul>
+                        <p class="mt-2">Players are expected to use the provided scripted features to create a realistic and immersive role-play environment. Continuously typing in OOC chat while another player is trying to engage in role-play is also considered FailRP and will not be tolerated. Disrupting the immersive experience through FailRP will result in disciplinary action.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Death matching (RDM/VDM) -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection14">
+                        Death matching (RDM/VDM)
+                    </h3>
+                    <div id="subsection14" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Killing another player with little or no engaged role-play is strictly forbidden. Random Death match (RDM) and Vehicle Death match (VDM) are not tolerated.</p>
+                        <p class="mt-2"><strong>Random Death match (RDM):</strong></p>
+                        <p>RDM refers to killing or attempting to kill another player without proper intent or role-play. Killing on sight without proper escalation is not allowed and is considered a form of RDM. Proper escalation involves ongoing interactions that naturally lead to violence, making deadly actions justifiable.</p>
+                        <p class="mt-2"><strong>Vehicle Death match (VDM):</strong></p>
+                        <p>VDM involves using a vehicle to kill or attempt to kill another player without intent or role-play. Similar to RDM, this behavior is unacceptable unless it is part of a properly escalated role-play scenario.</p>
+                        <p class="mt-2"><strong>Deadly Actions Must Have RP Behind Them:</strong></p>
+                        <p>Any use of deadly force should be supported by role-play. If an incident escalates to the point where deadly actions are taken, it must be the result of an ongoing role-play scene.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Power Gaming -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection15">
+                        Power Gaming
+                    </h3>
+                    <div id="subsection15" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Power gaming is the act of using in-game mechanics, external information, or role-play concepts to unfairly or unrealistically benefit your character, disrupting the balance of the role-play experience.</p>
+                        <p class="mt-2">Examples of power gaming include, but are not limited to:</p>
+                        <ul class="list-disc ml-6">
+                            <li>Escaping via Teleportation: Using teleportation markers to escape, such as fleeing into your apartment or another location that others cannot access.</li>
+                            <li>Unrealistic Hostage Situations: Kidnapping a cop to get your friend out of jail is considered power gaming because it forces law enforcement to value the hostage’s life and negotiate, leaving them with limited options. There are more realistic ways to break your friends out of jail without resorting to such tactics.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Meta gaming -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection16">
+                        Meta gaming
+                    </h3>
+                    <div id="subsection16" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Meta gaming is the use of out-of-character or external information to influence in-game situations. This includes, but is not limited to:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Stream Sniping:</strong> Watching another player’s stream to gain an advantage or alter your in-game decisions.</li>
+                            <li><strong>Third-Party VOIP Applications:</strong> While being in Discord calls, TeamSpeak, or other external chat systems is acceptable, all in-city decisions, plans, and character-related conversations should take place within the city using in-game voice chat, radios, and phones. Using external communication tools to coordinate or influence in-game actions in a way that bypasses in-game interactions is considered meta gaming.</li>
+                            <li><strong>Abusing Staff Powers:</strong> Using powers granted by your staff position to unfairly influence or manipulate in-game situations. Staff members must separate their staff duties from their role-play actions and should not use their authority to gain an in-game advantage.</li>
+                        </ul>
+                        <p class="mt-2">Any information obtained from streams, chat, or other out-of-game sources and used in-game will result in disciplinary action, up to and including suspension from the server.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Interactions Between Your Characters -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection17">
+                        Interactions Between Your Characters
+                    </h3>
+                    <div id="subsection17" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>While you are allowed to have multiple characters in the city, these characters must remain completely separate in terms of in-character relationships. Your characters should not know each other as family members, close friends, or in any other capacity. Furthermore, your characters are not permitted to interact in any way, including transferring money or assets between them, either directly or through a third party. If such actions are discovered, the transferred items will be deleted from your inventory, and disciplinary action will be taken.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Safe Zones -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection18">
+                        Safe Zones
+                    </h3>
+                    <div id="subsection18" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Safe Zones are designated areas where crime is strictly prohibited. It is considered FailRP to escape from a crime by entering a safe zone. However, if a role-play (RP) scenario begins outside a safe zone and naturally continues into one, the criminal RP may proceed, but it must be handled realistically. Be aware that loitering in a safe zone removes your federal protection.</p>
+                        <p class="mt-2">The following are considered safe zones:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Inside Hospitals:</strong> No retaliatory crimes are allowed within hospital premises.</li>
+                            <li><strong>Spawn Locations:</strong> Spawn locations are designated SAFE ZONES. This includes any spot on the spawn selection map and any teleport or entrance into an apartment or building in the city. Players must be allowed to move freely from these locations. However, if players loiter in these areas, the protected status is forfeited.</li>
+                        </ul>
+                        <p class="mt-2"><strong>Note on Police Departments and Other Non-Protected Areas:</strong> While Police Departments and similar locations are not protected as safe zones, any role-play involving sieges, attacks, or similar actions must be conducted realistically. This means ensuring enough players are involved to make the scenario believable and that the role-play intent is strong and well-developed. These actions should not be used simply as a means to constantly rescue a friend from arrest.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Fear RP -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection19">
+                        Fear RP
+                    </h3>
+                    <div id="subsection19" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Fear RP requires you to respond to in-game situations as you would in real life if faced with a dangerous scenario. This is an RP server, and you must act as though you genuinely fear for your life.</p>
+                        <p class="mt-2"><strong>For example:</strong></p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Armed Robbery:</strong> If a masked individual enters your workplace and demands money at gunpoint, comply with their demands. Attempting to fight back or trigger a silent alarm without carefully considering the risks would break Fear RP.</li>
+                            <li><strong>Kidnapping:</strong> If you're surrounded by armed individuals who force you into a vehicle, comply rather than attempting to overpower them. Escaping without a realistic chance of survival is not in line with Fear RP.</li>
+                            <li><strong>Gang Confrontation:</strong> If outnumbered by a rival gang in a secluded area, comply with their demands. Retaliating or trying to escape when outgunned is unrealistic and breaks Fear RP.</li>
+                            <li><strong>Traffic Stop Gone Wrong:</strong> As a police officer pulling over known gang members, if additional gang members arrive and surround you, recognize the danger. De-escalate, call for backup discreetly or comply with demands if your life is threatened. Drawing your weapon or making arrests without a backup would be unrealistic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Respect For Life Rule -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection20">
+                        Respect For Life Rule
+                    </h3>
+                    <div id="subsection20" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Any situation that escalates to a shootout or killing must be grounded in well-developed role-play (RP). Always attempt to resolve the scenario through RP before resorting to violence. A mandatory 30-minute cooldown between shootouts is in place, during which no further shootouts can be initiated. Emphasizing role-play over gun play fosters a more meaningful and engaging community experience.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Scene Limits -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection21">
+                        Scene Limits
+                    </h3>
+                    <div id="subsection21" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>A maximum of four (4) civilians are allowed per criminal scene unless it's a gang-related scene. For specific limits regarding gang members, refer to the Gang Rules.</p>
+                        <p class="mt-2"><strong>Suicide RP:</strong> Role-play involving suicide must be handled with extreme care and the full consent of all parties involved. This type of RP is discouraged and may be subject to administrative review. It may also violate your streaming platform's terms of service.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Combat Logging -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection22">
+                        Combat Logging
+                    </h3>
+                    <div id="subsection22" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Logging off or forcibly respawning to avoid role-play situations, such as police chases or medical scenes, is prohibited. If you need to log off during an active RP scenario, you must get acknowledgment from all involved parties. Logging out without this agreement will be considered combat logging and will result in disciplinary action.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Robbing OR Killing Players -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection23">
+                        Robbing OR Killing Players
+                    </h3>
+                    <div id="subsection23" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>You can either rob or kill someone, but not both. Killing someone just to rob them is considered FailRP. After killing a character, your focus should be on escaping the scene, not looting. The following actions are prohibited:</p>
+                        <ul class="list-disc ml-6">
+                            <li>Requesting bank transfers or forcing players to sell their car(s).</li>
+                            <li>Taking items from another player's apartment, stash, business stash, or a boss menu.</li>
+                            <li>Extorting a player for large sums of money to avoid repeated robberies or killings. When robbing or kidnapping, you may only kill the player if they refuse to comply.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Cop Minimum for Kidnapping -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection24">
+                        Cop Minimum for Kidnapping
+                    </h3>
+                    <div id="subsection24" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Kidnapping a Civilian:</strong> If you plan to kidnap a civilian, there must be at least four (4) officers on duty.</p>
+                        <p class="mt-2"><strong>Kidnapping or Taking a Police Officer Hostage:</strong> There must be a minimum of six (6) officers on duty for an officer to be taken hostage or kidnapped.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Vigilante RP -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection25">
+                        Vigilante RP
+                    </h3>
+                    <div id="subsection25" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Vigilante RP is not allowed. Your character must be portrayed as a normal human, without superhuman abilities or unrealistic combat skills.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Serial Killer RP -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection26">
+                        Serial Killer RP
+                    </h3>
+                    <div id="subsection26" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Playing a serial killer requires advanced role-play skills and must be approached with care to avoid Random Death match (RDM). The role-play must be deep, with a well-developed storyline that includes ways for your character to be caught. This can involve bragging about your crimes, sending anonymous letters to Weazel News or the police, and leaving behind clues. Engaging in serial killer RP without these elements is not allowed and will be treated as FailRP.</p>
+                        <p class="mt-2">In order to participate in Serial Killer RP you must open an RP support ticket with detailed information about your plans, backstory, and seek approval. This allows us to make sure we don’t have an influx of serial killers roaming the city.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Torture RP -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection27">
+                        Torture RP
+                    </h3>
+                    <div id="subsection27" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Torture RP is allowed within reason. The victim must be able to continue role playing after the scenario with all body parts functional if they choose. Deformities from the RP can be kept at the victim’s discretion. Sexual acts are strictly prohibited during Torture RP.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Do Not Return to The Scene -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection28">
+                        Do Not Return to The Scene
+                    </h3>
+                    <div id="subsection28" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>If you are downed and removed from the scene by EMS, Fire, Police, or another individual, you cannot return to the active scene until it is fully complete.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Impersonating Emergency Personnel -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection29">
+                        Impersonating Emergency Personnel
+                    </h3>
+                    <div id="subsection29" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Impersonating emergency personnel, including Police, Fire/EMS, DOT, and Communications staff, is strictly prohibited. This behavior is considered power gaming and will not be tolerated.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Healing in a Situation -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection30">
+                        Healing in a Situation
+                    </h3>
+                    <div id="subsection30" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Players are allowed to use bandages and apply armor during active scenes.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Perma-Death/Death Penalty -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection31">
+                        Perma-Death/Death Penalty
+                    </h3>
+                    <div id="subsection31" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Player's Choice:</strong> Players may choose to permanently kill off (perm-death) any of their characters. No player will be forced to perm-death a character.</p>
+                        <p class="mt-2"><strong>Declaring Perma-Death:</strong> To proceed with a perm-death, a player must be declared dead by on-duty EMS. Use the /me command to notify EMS of your intention when they arrive on the scene.</p>
+                        <p class="mt-2">You do not have to perma your character, this is available for RP reasons only, and you can simply just stop playing and delete said character.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Camping Illicit Areas -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection32">
+                        Camping Illicit Areas
+                    </h3>
+                    <div id="subsection32" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Illicit areas include drug locations, job areas, money laundering spots, and similar locations.</p>
+                        <p class="mt-2"><strong>Civilian Behavior:</strong> Civilians cannot loiter in high-traffic areas near illicit spots with the intent to rob others. In the instance of gang-controlled locations, they can elect to charge a tax, require compensation, or deny access to an area they have control over.</p>
+                        <p class="mt-2"><strong>Police Behavior:</strong> Police are not allowed to camp near drug areas solely to make traffic stops or arrests. However, they may conduct surveillance to build a larger case.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Dirty Cop RP -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection33">
+                        Dirty Cop RP
+                    </h3>
+                    <div id="subsection33" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Dirty cop role-play is generally prohibited, as it can lead to power gaming and unfair advantages. Exceptions can be made if a player submits an RP support ticket with a detailed description of the storyline and goals. This request must receive unanimous approval from senior staff. Playing as a dirty cop without prior approval will result in immediate removal from your LEO role, at minimum.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: EMS Authority & Calling for EMS -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection34">
+                        EMS Authority & Calling for EMS
+                    </h3>
+                    <div id="subsection34" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Respawn and EMS Custody:</strong> Once revived, you are under EMS custody until cleared by a medic. Bypassing EMS services without a valid reason is considered FailRP and will be handled on a case-by-case basis, with exceptions detailed in the Gang Rules.</p>
+                        <p class="mt-2"><strong>Calling for EMS:</strong> If downed, you must call for EMS or be transported to the hospital by another player. EMS should be utilized when available. If EMS is busy or elsewhere, you may wait or check in at the hospital if there are only four EMS personnel on duty. If no EMS is online, type /aihelp to summon an AI medic. Avoid repeatedly skipping EMS services.</p>
+                        <p class="mt-2"><strong>Post-Treatment Injuries:</strong> After EMS treatment, you cannot immediately pursue revenge or engage in strenuous activities. Serious injuries, like gunshot wounds, must be role-played realistically, acknowledging that your character cannot run or fight as if fully healed. Injuries must be role-played for at least 10 minutes post-treatment.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Downed & New Life Rule -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection35">
+                        Downed & New Life Rule
+                    </h3>
+                    <div id="subsection35" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>When killed, treat it as incapacitation requiring life-saving care. Once revived, you don’t need to forget the event, but you must follow these guidelines:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>30-Minute Cooldown on Retaliations:</strong> Wait 30 minutes before retaliating against those involved in your death.</li>
+                            <li><strong>Role-playing Injuries:</strong> Realistically role-play any injuries sustained during the incident.</li>
+                            <li><strong>Avoid Trolling:</strong> Do not repeatedly return to the scene or engage in "mini wars" with those who killed you. Being shot should instill fear, leading you to either involve the police or carefully plan your revenge.</li>
+                            <li><strong>Knockout Scenarios:</strong> If knocked out instead of killed, such as in fistfights or blunt force encounters, role-play the scenario appropriately.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Stealing or Harming Federally Protected Vehicles and/or Personnel -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection36">
+                        Stealing or Harming Federally Protected Vehicles and/or Personnel
+                    </h3>
+                    <div id="subsection36" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Personnel:</strong> EMS, Fire, and Communications employees are federally protected. Kidnapping, killing, robbing, or holding these personnel hostage is strictly prohibited.</p>
+                        <p class="mt-2"><strong>Active Shooting Scenes:</strong> If EMS is staged near an active scene, criminal activity may continue. However, once EMS enters the scene, all criminal activity within their view must cease. EMS should not be used to end a scene prematurely and should only be called in once cleared by the police.</p>
+                        <p class="mt-2"><strong>Vehicles:</strong> Citizens are prohibited from stealing LEO, EMS, Fire, or SADOT vehicles, though stealing from police vehicles is allowed.</p>
+                        <p class="mt-2"><strong>Restricted Vehicles:</strong> Fire/EMS vehicles and personnel are off-limits for theft or robbery.</p>
+                        <p class="mt-2"><strong>Prohibited Vehicles:</strong> Citizens cannot steal local or business aircraft, local EMS vehicles, or military vehicles, including helicopters, tanks, jets, transport vehicles, cargo bobs, and military helicopters.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Robbery Rules -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection37">
+                        Robbery Rules
+                    </h3>
+                    <div id="subsection37" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Hostages:</strong> A minimum of 6 officers must be on duty for high-priority crimes like bank or jewelry store robberies. Robbers cannot use friends as hostages or employ fake hostages. The hostage must be a random person encountered during the scenario.</p>
+                        <p class="mt-2">A maximum of 2 hostages is allowed, with a reasonable number of robbers to manage them. Hostages cannot be taken from the scene after the crime is committed. Law enforcement will intervene to prevent this.</p>
+                        <p class="mt-2">If a ransom is requested, the hostage must be exchanged for the money. The total ransom allowed is $50,000 per hostage, payable in cash only, with police required to negotiate.</p>
+                        <p class="mt-2"><strong>Robbers:</strong> No more than 4 robbers (6 if it’s a gang) are allowed at the active scene. Up to 2 additional members (4 for gangs) can be staged outside for getaways or exchanges. A maximum of 3 vehicles is permitted.</p>
+                        <p class="mt-2">Motorcycles/ATVs should not be used in robberies (this rule may be revised). The robbery must be fully planned before it starts; no additional people or hostages can be added after the robbery begins.</p>
+                        <p class="mt-2">Robbers must carry a backpack or bag during the robbery to represent where stolen items are stored, including AR-type rifles.</p>
+                        <p class="mt-2">Robbers can make demands during negotiations, but demands that police not pursue or allow the hostage to leave the scene are not allowed. Police should only negotiate for ransom, free passage from the scene, or other creative ideas and must never give away protected police equipment (ammo, guns, body armor, etc).</p>
+                        <p class="mt-2"><strong>LEO (Law Enforcement Officers):</strong> Law enforcement will conduct negotiations and can have as many officers on the scene as necessary. When SRT (Special Response Team) arrives, all other LEOs should leave the immediate scene, except for the negotiating officer, and set up a perimeter. Negotiations can be conducted face to face, over radio channels, or by phone.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Server Restart Rule -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection38">
+                        Server Restart Rule
+                    </h3>
+                    <div id="subsection38" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>No criminal activity is to begin 15 minutes before or after a server restart. This time is reserved for players to secure their belongings and store vehicles in garages. Restarts occur at 12:00 AM and 12:00 PM Eastern Standard Time. Activities that could involve police, such as shooting, fighting, or speeding, are prohibited during this time. Ongoing scenes that began before the restart may continue as long as they are not new events.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Police Mistreatment and Appeal -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection39">
+                        Police Mistreatment and Appeal
+                    </h3>
+                    <div id="subsection39" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>If you feel mistreated during a police situation, use the proper in-city channels, such as speaking to a supervisor or filling out a complaint form for the specific agency. Do not submit a moderation report unless the officer is breaking a server rule. Treat abuse of power as an in-character issue and report it accordingly. Department complaints should be handled through Discord, but they are considered an extension of role-play.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Third Partying -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection40">
+                        Third Partying
+                    </h3>
+                    <div id="subsection40" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Definition:</strong> Third Partying is the act of adding additional people to an ongoing role-play (RP) scene without a legitimate in-character reason, often to alter the outcome.</p>
+                        <p class="mt-2"><strong>Guidelines:</strong> Involving additional people in a scene is allowed, but it must make sense within the context of the role-play. Here’s when it is appropriate or inappropriate:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Appropriate Third Partying:</strong></li>
+                            <ul class="list-disc ml-6">
+                                <li>Gang Involvement: If you are in a gang and get pulled over, role-play the traffic stop without involving others. However, if you possess large amounts of illegal materials that could impact your gang, calling for backup is acceptable.</li>
+                                <li>Police Backup: Cops should evaluate situations during stops or encounters. If the person involved is a high-profile criminal or the situation could escalate, calling for backup is justified.</li>
+                            </ul>
+                            <li><strong>Inappropriate Third Partying:</strong></li>
+                            <ul class="list-disc ml-6">
+                                <li>Unrelated Interference: Do not interfere in scenes where you have no legitimate reason to be involved. For example, don’t step in to help someone you don’t know who is dealing with a cop.</li>
+                                <li>Looting Unrelated Scenes: Running up to a scene you weren’t part of just to rob downed players or steal from cars is prohibited.</li>
+                                <li>Random Aggression: Joining a scene just to attack or disrupt without in-character motivation is not allowed. For instance, jumping into a fight between two players when you have no connection to them is considered third-partying.</li>
+                            </ul>
+                            <li><strong>Other Examples:</strong></li>
+                            <ul class="list-disc ml-6">
+                                <li>Revenge Without Connection: Don’t involve yourself in seeking revenge or helping someone escape unless you have a direct connection, like gang ties or family.</li>
+                                <li>Neutral Observers: If you witness a crime or police action but have no direct involvement, don’t intervene unless it aligns with your character’s role or storyline.</li>
+                            </ul>
+                        </ul>
+                        <p class="mt-2">The goal is to maintain a realistic and immersive role-play environment. Only third-party when it aligns with your character’s motives and fits the situation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Gang RP -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section5">
+                Gang RP
+            </h2>
+            <div id="section5" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <p>Gangs are a vital part of our city's role-play environment, and certain exceptions are made for them in terms of scene limits. However, to maintain their status, gangs must adhere to specific rules and meet established criteria.</p>
+
+                <!-- Collapsible Section: Gang Definition -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection41">
+                        Gang Definition
+                    </h3>
+                    <div id="subsection41" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <ul class="list-disc ml-6">
+                            <li><strong>Identity and Symbols:</strong> Members share a common identity, typically linked to a name, and often use other symbols. This identity is recognized both by the members themselves and by others. This can include a common name, slogan, sign, symbol, tattoo, style or color of clothing, hairstyle, hand sign, or graffiti.</li>
+                            <li><strong>Permanence and Organization:</strong> Gangs have a degree of organization and some level of permanence, distinguishing them from temporary groups. The organization can range from loose associations to highly structured hierarchies.</li>
+                            <li><strong>Criminal Activity:</strong> A key characteristic of gangs is their involvement in an elevated level of criminal activity. Members engage in these activities with the intent to enhance or preserve the gang’s power, reputation, or economic resources.</li>
+                            <li><strong>Group Size:</strong> A gang typically consists of 6 to 10 members. These members collectively adopt a group identity that they use to create an atmosphere of fear or intimidation, often through violence or criminal activities.</li>
+                            <li><strong>Purpose and Objectives:</strong> The primary purpose of a gang, at least in part, is to engage in criminal activity. They frequently use violence or intimidation to achieve their criminal objectives, and their actions are often aimed at enhancing the gang’s influence, reputation, or financial standing.</li>
+                            <li><strong>Whitelisted:</strong> Gangs are special entities in our city. You must be an approved gang to act as a gang. Civilians are not allowed to represent themselves in any way that could give off the appearance they are a gang.</li>
+                        </ul>
+                        <p class="mt-4">To ensure compliance with TOS, our city utilizes in-city gangs, along with their designated territories and colors. This helps maintain a structured and immersive role-play experience while adhering to the necessary guidelines. For more information, please refer to the ‘Gang Information’ channel in Discord.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Rules -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection42">
+                        Gang Rules
+                    </h3>
+                    <div id="subsection42" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>New Gangs:</strong> New gangs must be approved by staff and are selected from the list of available gangs within the city. To begin the process, players interested in forming a new gang must submit an application detailing their gang’s concept, objectives, and planned activities. The application will be reviewed by the staff team to ensure it aligns with the city's role-play standards and guidelines.</p>
+                        <p class="mt-2">Once approved, all new gangs will enter a 21-day probationary period during which no rule breaks can occur without risking disbandment. During this probation period, new gangs are permitted to engage in all gang-related activities, but they must operate with heightened caution to ensure compliance with server rules. This probationary period allows the staff to assess the gang's behavior and integration into the city's role-play environment.</p>
+                        <p class="mt-2">Failure to adhere to server rules during this probationary period may result in immediate disbandment of the gang.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Membership and Minimums -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection43">
+                        Gang Membership and Minimums
+                    </h3>
+                    <div id="subsection43" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <ul class="list-disc ml-6">
+                            <li><strong>Minimum Membership:</strong> A gang must have at least six (6) active members to be established and whitelisted.</li>
+                            <li><strong>Ongoing Activity Requirements:</strong> After being whitelisted, gangs must maintain a minimum of six (6) active members. If the number of active members falls below this threshold, the gang will receive a warning and have 7 days to increase its activity. If the gang fails to meet the minimum activity requirement within this period, it will be disbanded. The gang will go back into the list of available gangs for others to pick up.</li>
+                            <li><strong>Maximum Membership:</strong> Gangs are limited to a maximum of 10 members.</li>
+                            <li><strong>One Gang Character Rule:</strong> Players may only have one gang-affiliated character to prevent meta-gaming between rival gangs.</li>
+                            <li><strong>Participation in Gang Activities:</strong> Gangs are required to engage in defined gang activities as outlined.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Conduct Expectations -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection44">
+                        Gang Conduct Expectations
+                    </h3>
+                    <div id="subsection44" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Gangs are expected to behave as gangs, not as social clubs, book clubs, or community groups. It is crucial that gangs actively participate in activities that reinforce their role in the city's criminal underworld. This includes:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Forming Long-Term Rivalries:</strong> Gangs should develop and maintain rivalries with other gangs, leading to ongoing conflicts and power struggles.</li>
+                            <li><strong>Turf Disputes:</strong> Engaging in disputes over territory is a key aspect of gang life. Gangs are expected to fight for control of areas that are important to their operations.</li>
+                            <li><strong>Petty Crime and Criminal Enterprises:</strong> Gangs should regularly engage in petty crimes, as well as organize long-term criminal enterprises aimed at increasing the gang’s status and influence within the city.</li>
+                        </ul>
+                        <p class="mt-2">Failure to meet these expectations can result in the loss of your gang’s status and disbandment.</p>
+                        <p class="mt-2"><strong>Compliance with Server Rules:</strong> Gangs are expected to follow all server rules, including during interactions with law enforcement officers (LEOs). Any criminal actions, whether inside or outside gang territory, must adhere to the server’s General Rules.</p>
+                        <p class="mt-2"><strong>Criminal Activity in Turf:</strong> Gang members must not commit petty crimes (store robberies, house robberies, etc.) within their own turf. Engaging in criminal activities should be focused on rival territories or neutral areas.</p>
+                        <p class="mt-2"><strong>Leadership Responsibility:</strong> Gang leaders are responsible for ensuring that their members comply with all server rules.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Civilian Interactions -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection45">
+                        Civilian Interactions
+                    </h3>
+                    <div id="subsection45" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <ul class="list-disc ml-6">
+                            <li><strong>Territory Control:</strong> Gangs that control a territory have the right to chase out any unwanted persons who pose a threat. This includes protecting the territory from rival gangs and enforcing dominance within the area.</li>
+                            <li><strong>Civilian Criminal Activity:</strong> If civilians are caught selling drugs or robbing stores within gang-controlled territory, the controlling gang can impose taxes, issue threats, or enforce other penalties, except when safe passage must be allowed. However, gangs must not interfere with police conducting routine business, such as traffic stops, unless it directly involves the gang.</li>
+                            <li><strong>Gang Colors and Escalation:</strong> Gangs can escalate to violence if a civilian is seen wearing their custom EUP or gang mask, as this could be considered false flagging and may result in perma-death. However, if a civilian is simply role-playing in the territory without criminal intent, gangs should not escalate to shooting. A knockout or stabbing is sufficient.</li>
+                            <li><strong>Unlimited Gang Protection:</strong> When civilians cause trouble in gang territory, there is no limit to the number of gang members who can protect their turf. This can include imposing taxes, issuing threats, or resorting to violence as necessary.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Rosters -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection46">
+                        Gang Rosters
+                    </h3>
+                    <div id="subsection46" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Roster Requirements:</strong> Every gang must maintain an up-to-date roster, which should be submitted to RP staff. The roster must include both in-city names and Discord names of members. Gangs must have a leadership structure.</p>
+                        <p class="mt-2"><strong>Submission and Maintenance:</strong> The roster must be completed on a Google Sheet, with a link submitted to the roster forum in the gangs section of Discord. Leadership is responsible for keeping the roster current.</p>
+                        <p class="mt-2"><strong>Membership Flexibility:</strong> There is no limit to the number of hang arounds, runners, or civilian associates a gang can have. However, only official members listed on the roster can engage in gang-related activities.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Rivalries -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection47">
+                        Gang Rivalries
+                    </h3>
+                    <div id="subsection47" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Rivalries:</strong> Gang rivalries should naturally escalate from disrespect, turf disputes, or fistfights, but all-out combat should be rare and well-justified. These should be long-term and impactful. You should not be hanging out with members of other gangs.</p>
+                        <p class="mt-2"><strong>Escalation to Combat:</strong> Full-scale combat is permitted if a rivalry becomes too heated. In such cases, all members from both sides may participate in open fire without player limits. However, randomly initiating shootouts with other gangs is not acceptable, and frequent gang shootouts indicate poor role-play that needs correction.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Law Enforcement/EMS During Gang Interactions -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection48">
+                        Law Enforcement/EMS During Gang Interactions
+                    </h3>
+                    <div id="subsection48" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Initiation Rules and Violence Escalation:</strong> Both gangs and law enforcement must follow initiation rules and only escalate to violence as a last resort. Law enforcement will be trained not to shoot on sight, and gangs must follow the same restraint.</p>
+                        <p class="mt-2"><strong>Police Risk:</strong> Law enforcement officers enter active gang interactions at their own risk. Gangs should prioritize self-preservation, meaning they should collect their injured and flee when police arrive, rather than engaging in prolonged combat.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Colors -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection49">
+                        Gang Colors
+                    </h3>
+                    <div id="subsection49" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p><strong>Identification:</strong> Gang colors serve as a distinct identifier for each gang. While gangs are not required to wear their colors at all times, members must wear them when planning interactions with rival gangs where surprise would give an unfair advantage.</p>
+                        <p class="mt-2"><strong>Car Colors:</strong> Gangs cannot dictate the color of other players’ cars. However, knowingly painting your car the color used by a gang could cause you to be mistaken for that gang and put you in some tricky role-play scenarios.</p>
+                        <p class="mt-2"><strong>Color and Territory:</strong> Gang colors and territories are predetermined by the gang selected in the city. For example, the Ballas must wear purple or Ballas gear from the clothing store. Their territory would also be defined by selecting the Ballas.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Gang Limits -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection50">
+                        Gang Limits
+                    </h3>
+                    <div id="subsection50" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>There is no limit to the number of gangs a player can join over their time in the city. This should be a heavy and tricky decision for players and gang leaders. A player who often hops between gangs, seeks membership in other gangs, or creates a bad track record could result in role-play consequences for both the player hopping around and his future gangs. It could lead to rivalries where none existed before. Demands from the player's old gang, and damage to the reputation of the player who is hopping from gang to gang. Leaders should take their roster slots seriously and players should vet the gangs they want to join thoroughly before joining.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Moderation and Disciplinary Policy -->
+        <div class="mb-4">
+            <h2 class="accordion-header text-2xl font-semibold bg-gray-800 p-4 cursor-pointer rounded-lg" data-accordion="section7">
+                Moderation and Disciplinary Policy
+            </h2>
+            <div id="section7" class="accordion-content hidden p-4 bg-gray-700 border-2 border-gray-600 rounded-lg shadow-lg">
+                <!-- Collapsible Section: Reporting Processes -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection51">
+                        Reporting Processes
+                    </h3>
+                    <div id="subsection51" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Our city does not operate on a ticket-based system, but we do have a structured process for reporting rule breaks. To ensure your report is properly reviewed, please follow these guidelines:</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Submit Evidence:</strong> All reports must include evidence in the form of screenshots or unedited clips with sound. If you have multiple clips, that’s perfectly fine—submit them all. Reports without evidence will be dismissed and should be resolved through role-play in the city.</li>
+                            <li><strong>Prepare Your Ticket:</strong> Before submitting a ticket, make sure you have all your evidence ready. Your ticket should include all necessary details about the situation when you open the ticket. Moderation and staff should not need to request additional information or have to wait for your evidence. Don’t just open the ticket as a placeholder until you get around to it.</li>
+                            <li><strong>Review Your Evidence:</strong> Review all of your evidence before submitting, make sure your clips are working, have sound, that your screenshots show what you think they do, etc.</li>
+                            <li><strong>Cite the Rule:</strong> When submitting a report, identify the specific rule from this rulebook that you believe was broken. Include this rule with your evidence. For example, saying ‘Gang Rules: Rule 2 Gang Membership and Minimums’ would be perfect and speed up your incident handling.</li>
+                            <li><strong>Response Time:</strong> Tickets will generally be handled within a 48-hour window. Failure to respond to staff inquiries in a timely manner could result in your ticket being closed due to lack of response.</li>
+                        </ul>
+                        <p class="mt-2">Following these steps will help ensure that your report is handled efficiently and fairly.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Instructions/Rulings -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection52">
+                        Instructions/Rulings
+                    </h3>
+                    <div id="subsection52" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>Instructions or rulings are final and non-negotiable. If you believe a moderation ruling was made in error, you must address the dispute outside the game by creating a Ruling Dispute ticket in Discord. The dispute will be reviewed by Senior Staff and then passed down an Admin or Lead to handle if Senior Staff believe you have a case. The ruling of Admin or Lead at this point is final and cannot be further escalated.</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Proper Channels:</strong> Do not directly message (DM) members of the Staff Team regarding city-related issues. Instead, use the proper channels within Discord—follow the appropriate chain of command or open a support ticket. Staff should never handle city-related incidents through DMs. The only acceptable response from staff to a DM about an issue should be: "Please open a ticket so we can review." The only observed rulings about situations will be those placed in writing.</li>
+                            <li><strong>Accountability:</strong> No one in the city, regardless of rank, is above the rules—including the Director and Owner. Warnings and strikes can and will be applied to anyone who violates the rules, regardless of their position.</li>
+                        </ul>
+                        <p class="mt-2">Following these guidelines ensures transparency, fairness, and consistency in the handling of all city-related matters.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Warning -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection53">
+                        Warning
+                    </h3>
+                    <div id="subsection53" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>The first level of disciplinary action in our city is a warning. If you are caught breaking any of the official Rules & Regulations, a member of our staff team will issue a warning.</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Active Warnings:</strong> You can receive up to three (3) active warnings for minor infractions before a strike is issued. Warnings remain active for 30 days. If you accumulate three active warnings and commit another infraction, you will receive a strike.</li>
+                            <li><strong>Warning Expiry:</strong> Once a warning falls off after 30 days, it no longer counts towards your active warnings, but it will still be recorded in your overall tracker. This means that even after a warning expires, it remains part of your disciplinary history.</li>
+                        </ul>
+                        <p class="mt-2">This system is designed to encourage rule compliance and provide a fair process for addressing minor rule violations.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Strikes -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection54">
+                        Strikes
+                    </h3>
+                    <div id="subsection54" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>A strike represents a more serious offense and does not expire. Certain serious offenses will result in an automatic strike, even if you have no prior warnings.</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Automatic Strike:</strong> For more severe rule violations, a strike may be issued immediately, bypassing the warning stage altogether.</li>
+                            <li><strong>Warnings Leading to a Strike:</strong> If you have three (3) active warnings, the moderation team is required to issue a strike for any additional infractions, regardless of their severity.</li>
+                            <li><strong>Consequences:</strong> A strike may be accompanied by a temporary suspension from the city. The duration and specifics of the suspension are determined by the moderation team based on the nature of the offense.</li>
+                        </ul>
+                        <p class="mt-2">Moderation may also issue restrictions in some instances where they feel a temporary vacation is not warranted. For example, if you get in trouble on your criminal character, but you have a cop. Moderation may decide to issue you a restriction that only allows you to play your cop for a period of time. Breaking the restriction as outlined by moderation will result in an immediate 7-day suspension.</p>
+                        <p class="mt-2">Strikes serve as a strong deterrent against repeat and serious rule violations, ensuring that the city remains a fair and respectful environment for all players.</p>
+                    </div>
+                </div>
+
+                <!-- Collapsible Section: Final Disciplinary Action: Removal from the Community -->
+                <div class="mb-2">
+                    <h3 class="text-xl font-semibold bg-gray-800 p-3 cursor-pointer rounded-lg" data-accordion="subsection55">
+                        Final Disciplinary Action: Removal from the Community
+                    </h3>
+                    <div id="subsection55" class="collapsible-content hidden p-3 bg-gray-600 border-2 border-gray-500 rounded-lg shadow-lg">
+                        <p>The most severe level of disciplinary action in our city is removal from the community. After accumulating three (3) strikes or committing a serious first-time offense—such as violating the zero-tolerance rule—you will be permanently removed from all community platforms.</p>
+                        <ul class="list-disc ml-6">
+                            <li><strong>Permanent Ban:</strong> Bans are permanent and cannot be appealed. Any attempt to circumvent the ban will result in further action.</li>
+                            <li><strong>Record Keeping:</strong> All disciplinary actions, including warnings and strikes, will be logged by a staff member and kept on record. These records will be considered if you apply for a staff position or during administrative reviews of current staff.</li>
+                        </ul>
+                        <p class="mt-2">This system ensures that only those committed to respectful and fair role-play remain part of our community.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Notice -->
+        <div class="fixed bottom-0 left-0 w-full bg-cornflower-blue text-white text-center p-4 shadow-lg z-50" style="background-color: #6495ED;">
+            <p class="text-lg font-semibold">
+                Our rules are subject to change, addition, or removal as Just RP evolves. When changes are made, the community will be notified well in advance. Certain rule changes may be discussed and voted on with Community Supporters to ensure that the adjustments reflect the interests of the community.
+            </p>
+        </div>
+
+
+
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-800 p-6">
+    <div class="container mx-auto flex justify-between items-center">
+        <div class="flex space-x-6">
+            <a href="http://play.justrp.cloud:40120/" class="hover:text-teal-400">TXAdmin</a>
+            <a href="https://fivemanage.com/dashboard/ascendancerp" class="hover:text-teal-400">Fivemange</a>
+<!--            <a href="#" class="hover:text-teal-400">Mobile App</a>-->
+        </div>
+        <div class="flex space-x-6 text-2xl">
+            <a href="https://discord.gg/JWJaBcpP8R" class="hover:text-teal-400"><i class="fa-brands fa-discord"></i></a>
+        </div>
+    </div>
+</footer>
+
+<!-- JavaScript -->
+<script>
+    const accordionHeaders = document.querySelectorAll('.accordion-header');
+    const accordionContents = document.querySelectorAll('.accordion-content');
+    const collapsibleHeaders = document.querySelectorAll('[data-accordion^="subsection"]');
+    const collapsibleContents = document.querySelectorAll('.collapsible-content');
+
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = document.getElementById(header.dataset.accordion);
+
+            // Hide all other content and remove gradient from other headers
+            accordionContents.forEach(item => {
+                if (item !== content) {
+                    item.classList.add('hidden');
+                    item.previousElementSibling.classList.remove('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white');
+                    item.previousElementSibling.classList.add('bg-gray-800', 'text-gray-300');
+                }
+            });
+
+            // Toggle the clicked content
+            content.classList.toggle('hidden');
+
+            // Apply gradient if expanded, remove if collapsed
+            if (!content.classList.contains('hidden')) {
+                header.classList.add('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white');
+                header.classList.remove('bg-gray-800', 'text-gray-300');
+            } else {
+                header.classList.add('bg-gray-800', 'text-gray-300');
+                header.classList.remove('bg-gradient-to-r', 'from-purple-500', 'to-pink-500', 'text-white');
+            }
+        });
+    });
+
+    collapsibleHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const content = document.getElementById(header.dataset.accordion);
+
+            // Toggle the clicked content
+            content.classList.toggle('hidden');
+        });
+    });
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close the menu when clicking a link
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+    });
+
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+</script>
+
+</body>
+
+</html>
