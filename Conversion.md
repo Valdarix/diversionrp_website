@@ -1,6 +1,6 @@
 # Conversion Guide
 
-This guide describes the steps to migrate the current site to a new stack using Laravel 11, React 18+, Tailwind CSS 3.4+, Framer Motion 11.9+, and HeroUI beta 2.8. The application will leverage SQLite 3.26+ for storage.
+This guide describes the steps to migrate the current site to a new stack using Laravel 11, React 18+, **Tailwind CSS 4**+, Framer Motion 11.9+, and HeroUI beta 2.8. The application will leverage SQLite 3.26+ for storage.
 
 ## 1. Setup Laravel
 1. Install PHP 8.2 and Composer.
@@ -20,13 +20,13 @@ This guide describes the steps to migrate the current site to a new stack using 
 3. Replace existing HTML pages with React components under `resources/js`.
 
 ## 3. Style with Tailwind & HeroUI
-1. Install Tailwind CSS 3.4 or later and HeroUI beta components:
+1. Install Tailwind CSS 4 and HeroUI beta components:
    ```bash
-   pnpm install -D tailwindcss@latest framer-motion@latest
+pnpm install -D tailwindcss@latest framer-motion@latest
    pnpm install @heroui/react@beta
    pnpm exec tailwindcss init
    ```
-2. Follow the [Tailwind upgrade guide](https://tailwindcss.com/docs/upgrade-guide) and [HeroUI Tailwind v4 migration](https://www.heroui.com/docs/guide/tailwind-v4) if upgrading beyond 3.4.
+2. Follow the [Tailwind upgrade guide](https://tailwindcss.com/docs/upgrade-guide) and [HeroUI Tailwind v4 migration](https://www.heroui.com/docs/guide/tailwind-v4) for the initial setup.
 
 ## 4. Migrate PHP logic
 1. Convert simple PHP scripts (like `send_email.php`) into Laravel controllers.

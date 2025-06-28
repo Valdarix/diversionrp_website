@@ -15,8 +15,13 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
    ```
-4. Add additional testing tools as needed and document them here.
+4. Lint PHP scripts:
+   ```bash
+   php -l db.php posts.php send_email.php showcase.php
+   ```
+5. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
 - The `.idea/` folder is ignored; do not commit IDE metadata.
+- Upcoming Laravel migration will use **Tailwind CSS 4**.
