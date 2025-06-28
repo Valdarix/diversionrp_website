@@ -1,10 +1,11 @@
 # Diversion RP Website
 
-Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack. The old static HTML pages (home, contact, rules, streams, showcase and support) have been removed and replaced with React components served by Laravel routes.
+Static website with PHP scripts and **Tailwind CSS 4**. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack. The old static pages now live as React components served by Laravel routes. UI elements are gradually being replaced by **HeroUI** components.
 
 ## Build CSS
 ```bash
 pnpm install
+pnpm add @heroui/react@beta --dir diversionrp-laravel
 pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
 pnpm run build --dir diversionrp-laravel
 ```

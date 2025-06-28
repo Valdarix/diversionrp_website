@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button } from '@heroui/react';
 
 export default function Home() {
   return (
@@ -21,9 +22,7 @@ export default function Home() {
         </h1>
         <p className="mt-6 text-lg text-gray-300">We're moving to React.</p>
         <a href="https://discord.gg/diversionrp" target="_blank" rel="noreferrer">
-          <button className="mt-8 bg-gradient-to-r from-teal-400 to-blue-500 px-6 py-2 rounded-full shadow-lg hover:from-blue-600 hover:to-teal-500">
-            Join Today!
-          </button>
+          <Button color="primary" className="mt-8 rounded-full">Join Today!</Button>
         </a>
       </main>
     </div>
