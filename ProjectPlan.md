@@ -23,7 +23,7 @@ This document outlines the current features and future development of the DIVERS
 3. **Phase 3** *(in progress)*
    - **Completed** creation of a Laravel 11 skeleton under `diversionrp-laravel`.
    - **Completed** initial React 18 setup with Vite and a `Home` component.
-   - Migrate static pages into React components.
+   - **In Progress** migrating static pages into React components. The `Contact` page now has a React version served by Laravel.
    - Upgrade Tailwind CSS to version 4 and adopt HeroUI components.
    - Keep existing PHP pages operational until the new stack fully replaces them.
 
