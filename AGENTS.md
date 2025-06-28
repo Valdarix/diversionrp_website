@@ -23,9 +23,18 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    tidy -qe *.html
    ```
-6. Add additional testing tools as needed and document them here.
+6. Scaffold the upcoming Laravel application:
+   ```bash
+   composer create-project laravel/laravel diversionrp-laravel
+   pnpm install --dir diversionrp-laravel
+   ```
+7. Run Laravel tests:
+   ```bash
+   cd diversionrp-laravel && php artisan test
+   ```
+8. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
 - The `.idea/` folder is ignored; do not commit IDE metadata.
-- Upcoming Laravel migration will use **Tailwind CSS 4**.
+- Laravel migration is now **in progress** and requires Tailwind CSS 4.

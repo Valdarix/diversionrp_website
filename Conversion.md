@@ -2,6 +2,8 @@
 
 This guide describes the steps to migrate the current site to a new stack using Laravel 11, React 18+, **Tailwind CSS 4**+, Framer Motion 11.9+, and HeroUI beta 2.8. The application will leverage SQLite 3.26+ for storage.
 
+*Phase 3 is now active. Use this document as the checklist while porting features to Laravel.*
+
 ## 1. Setup Laravel
 1. Install PHP 8.2 and Composer.
 2. Create a new Laravel project using the latest 11.x release:
