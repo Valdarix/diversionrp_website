@@ -15,19 +15,23 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
    ```
-4. Build the React/Laravel frontend after any JS or PHP change:
+4. Install HeroUI components for React:
+   ```bash
+   pnpm add @heroui/react@beta --dir diversionrp-laravel
+   ```
+5. Build the React/Laravel frontend after any JS or PHP change:
    ```bash
    pnpm run build --dir diversionrp-laravel
    ```
-5. Lint PHP scripts:
+6. Lint PHP scripts:
    ```bash
    php -l db.php posts.php showcase.php
    ```
-6. Validate HTML markup using **tidy**:
+7. Validate HTML markup using **tidy**:
    ```bash
    tidy -qe *.html
    ```
-7. The Laravel skeleton lives in `diversionrp-laravel`. If missing, scaffold it:
+8. The Laravel skeleton lives in `diversionrp-laravel`. If missing, scaffold it:
    ```bash
    composer create-project laravel/laravel diversionrp-laravel
    ```
@@ -38,15 +42,15 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    cp diversionrp-laravel/.env.example diversionrp-laravel/.env
    php artisan key:generate --working-dir=diversionrp-laravel
    ```
-8. Run Laravel tests:
+9. Run Laravel tests:
    ```bash
    cd diversionrp-laravel && php artisan test
    ```
-9. Launch the React/Vite dev server:
+10. Launch the React/Vite dev server:
    ```bash
    pnpm run dev --dir diversionrp-laravel
    ```
-10. Add additional testing tools as needed and document them here.
+11. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
