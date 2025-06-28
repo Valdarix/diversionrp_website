@@ -19,7 +19,11 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    php -l db.php posts.php send_email.php showcase.php
    ```
-5. Add additional testing tools as needed and document them here.
+5. Validate HTML markup using **tidy**:
+   ```bash
+   tidy -qe *.html
+   ```
+6. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
