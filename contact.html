@@ -28,9 +28,10 @@
 </head>
 
 <body class="bg-gray-900 text-white font-sans flex flex-col min-h-screen">
+    <a href="#main-content" class="sr-only focus:not-sr-only">Skip to main content</a>
 <!-- Header -->
 <header class="bg-gray-800 p-6 shadow-lg">
-    <nav class="container mx-auto flex justify-between items-center">
+    <nav class="container mx-auto flex justify-between items-center" aria-label="Main navigation">
         <div class="logo-container">
             <img src="images/logo.png" alt="Logo" class="logo">
         </div>
@@ -46,7 +47,7 @@
             <button class="bg-gradient-to-r from-purple-500 to-pink-500 px-6 py-2 rounded-full shadow-lg hover:from-pink-600 hover:to-purple-600">Join Today!</button>
         </a>
         <div class="md:hidden flex items-center">
-            <button id="menu-toggle" class="text-white focus:outline-none">
+            <button id="menu-toggle" class="text-white focus:outline-none" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M4 6h16M4 12h16M4 18h16"></path>
@@ -65,7 +66,7 @@
 </header>
 
 <!-- Contact Form Section -->
-<main class="container mx-auto flex-grow py-16 px-4">
+<main id="main-content" class="container mx-auto flex-grow py-16 px-4">
     <h1 class="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Contact Us</h1>
     <form action="send_email.php" method="POST" class="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
         <div class="mb-4">
@@ -114,6 +115,8 @@
 
     menuToggle.addEventListener('click', () => {
         mobileMenu.classList.toggle('hidden');
+        const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!expanded));
     });
 
     // Close the menu when clicking a link

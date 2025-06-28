@@ -13,9 +13,9 @@ This document outlines the current features and future development of the DIVERS
 3. Write automated tests for PHP scripts and CSS build.
 
 ## Roadmap
-1. **Phase 1**
-   - Clean up HTML structure and ensure accessibility.
-   - Expand Tailwind configuration for custom colors and fonts.
+1. **Phase 1** *(completed)*
+   - Clean up HTML structure with semantic tags, skip links, and ARIA attributes.
+   - Expanded Tailwind configuration for custom colors and fonts.
 2. **Phase 2**
    - Introduce a simple database (SQLite) for dynamic data such as posts or announcements.
    - Use PHP or a Node.js backend to serve dynamic pages.
