@@ -6,6 +6,7 @@ Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database 
 ```bash
 pnpm install
 pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
+pnpm run build --dir diversionrp-laravel
 ```
 
 ## PHP Lint
@@ -23,5 +24,9 @@ cd diversionrp-laravel && php artisan test
 To develop the React frontend run:
 ```bash
 pnpm run dev --dir diversionrp-laravel
+```
+Build the production assets:
+```bash
+pnpm run build --dir diversionrp-laravel
 ```
 See `Conversion.md` for detailed migration steps.
