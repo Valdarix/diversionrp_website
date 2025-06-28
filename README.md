@@ -20,4 +20,8 @@ Install its dependencies and run the default tests:
 pnpm install --dir diversionrp-laravel
 cd diversionrp-laravel && php artisan test
 ```
+To develop the React frontend run:
+```bash
+pnpm run dev --dir diversionrp-laravel
+```
 See `Conversion.md` for detailed migration steps.

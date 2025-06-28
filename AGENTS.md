@@ -35,9 +35,16 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    cd diversionrp-laravel && php artisan test
    ```
-8. Add additional testing tools as needed and document them here.
+8. Launch the React/Vite dev server:
+   ```bash
+   pnpm run dev --dir diversionrp-laravel
+   ```
+9. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
 - The `.idea/` folder is ignored; do not commit IDE metadata.
 - Laravel migration is now **in progress** and requires Tailwind CSS 4.
+- Access to `apt.llvm.org`, `security.ubuntu.com`, `archive.ubuntu.com`, or any
+  other necessary domain is allowed for installing dependencies and tools. The
+  agent may run privileged commands as needed to complete its tasks.
