@@ -1,63 +1,35 @@
 # AGENTS
 
-This repository contains the static web site for DIVERSION RP. Keep this file updated with any commands, checks, or tests needed to maintain the project.
+This repository contains the Diversion RP website built with Laravel and React. Keep this file updated with any commands, checks, or tests needed to maintain the project.
 
 ## Setup
-1. Install dependencies using **pnpm** (preferred over npm):
-   ```bash
-   pnpm install
-   ```
-2. Build Tailwind CSS once:
-   ```bash
-   pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
-   ```
-3. Run the build whenever Tailwind or CSS files change:
-   ```bash
-   pnpm exec tailwindcss -i ./src/styles.css -o ./dist/styles.css
-   ```
-4. Install HeroUI components for React:
-   ```bash
-   pnpm add @heroui/react@beta --dir diversionrp-laravel
-   ```
-5. Build the React/Laravel frontend after any JS or PHP change:
-   ```bash
-   pnpm run build --dir diversionrp-laravel
-   ```
-6. Lint PHP scripts:
-   ```bash
-   php -l db.php posts.php showcase.php
-   ```
-7. Validate HTML markup using **tidy**:
-   ```bash
-   tidy -qe *.html
-   ```
-8. The Laravel skeleton lives in `diversionrp-laravel`. If missing, scaffold it:
-   ```bash
-   composer create-project laravel/laravel diversionrp-laravel
-   ```
-   Then install dependencies:
+1. Install Node and PHP dependencies:
    ```bash
    pnpm install --dir diversionrp-laravel
    composer install --working-dir=diversionrp-laravel
+   ```
+2. Copy the environment file and generate an app key:
+   ```bash
    cp diversionrp-laravel/.env.example diversionrp-laravel/.env
    php artisan key:generate --working-dir=diversionrp-laravel
    ```
-9. Run Laravel tests:
+3. Ensure `diversionrp-laravel/database/database.sqlite` exists (tracked in git).
+4. Build the React/Laravel frontend:
+   ```bash
+   pnpm run build --dir diversionrp-laravel
+   ```
+5. Run Laravel tests:
    ```bash
    cd diversionrp-laravel && php artisan test
    ```
-10. Launch the React/Vite dev server:
+6. Launch the Vite dev server during development:
    ```bash
    pnpm run dev --dir diversionrp-laravel
    ```
-11. Add additional testing tools as needed and document them here.
+7. Add additional testing tools as needed and document them here.
 
 ## Notes
 - Ensure JetBrains IDEs open the project without build errors.
 - The `.idea/` folder is ignored; do not commit IDE metadata.
-- Laravel migration is now **in progress** and requires Tailwind CSS 4.
-- Access to `apt.llvm.org`, `security.ubuntu.com`, `archive.ubuntu.com`, or any
-  other necessary domain is allowed for installing dependencies and tools. The
-  agent may run privileged commands as needed to complete its tasks.
-- Access to `discord.gg` is also allowed via `curl` and other commands for
-  verifying invite links or retrieving data from the DIVERSION RP Discord.
+- The project uses Tailwind CSS 4, HeroUI beta components, and Framer Motion 12.
+- Access to required package repositories is allowed for installing dependencies.
