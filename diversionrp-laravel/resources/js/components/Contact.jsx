@@ -10,10 +10,10 @@ export default function Contact() {
           <img src="/images/logo.png" alt="Logo" className="h-12" />
           <ul className="hidden md:flex space-x-6">
             <li><a href="/" className="hover:text-purple-400">Home</a></li>
-            <li><a href="/rules.html" className="hover:text-purple-400">Rules</a></li>
-            <li><a href="/streams.html" className="hover:text-purple-400">Streams</a></li>
-            <li><a href="/showcase.html" className="hover:text-purple-400">Showcase</a></li>
-            <li><a href="/support.html" className="hover:text-purple-400">Supporters</a></li>
+            <li><a href="/rules" className="hover:text-purple-400">Rules</a></li>
+            <li><a href="/streams" className="hover:text-purple-400">Streams</a></li>
+            <li><a href="/showcase" className="hover:text-purple-400">Showcase</a></li>
+            <li><a href="/support" className="hover:text-purple-400">Supporters</a></li>
             <li><a href="/contact" className="hover:text-purple-400">Contact</a></li>
           </ul>
           <div className="md:hidden flex items-center">
@@ -32,17 +32,17 @@ export default function Contact() {
         </nav>
         <ul id="mobile-menu" className={`${open ? '' : 'hidden'} flex-col space-y-4 mt-4 md:hidden`}>
           <li><a href="/" className="block text-center hover:text-purple-400">Home</a></li>
-          <li><a href="/rules.html" className="block text-center hover:text-purple-400">Rules</a></li>
-          <li><a href="/streams.html" className="block text-center hover:text-purple-400">Streams</a></li>
-          <li><a href="/showcase.html" className="block text-center hover:text-purple-400">Showcase</a></li>
-          <li><a href="/support.html" className="block text-center hover:text-purple-400">Supporters</a></li>
+          <li><a href="/rules" className="block text-center hover:text-purple-400">Rules</a></li>
+          <li><a href="/streams" className="block text-center hover:text-purple-400">Streams</a></li>
+          <li><a href="/showcase" className="block text-center hover:text-purple-400">Showcase</a></li>
+          <li><a href="/support" className="block text-center hover:text-purple-400">Supporters</a></li>
           <li><a href="/contact" className="block text-center hover:text-purple-400">Contact</a></li>
         </ul>
       </header>
 
       <main className="container mx-auto flex-grow py-16 px-4">
         <h1 className="text-4xl font-extrabold text-center mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">Contact Us</h1>
-        <form action="/send_email.php" method="POST" className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
+        <form action="/contact" method="POST" className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg font-semibold mb-2">Name</label>
             <input type="text" id="name" name="name" className="w-full p-2 rounded-md bg-gray-700 border border-gray-600 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 text-white" required />

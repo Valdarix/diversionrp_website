@@ -8,10 +8,10 @@ export default function Home() {
           <img src="/images/logo.png" alt="Logo" className="h-12" />
           <ul className="flex space-x-6">
             <li><a href="/" className="hover:text-purple-400">Home</a></li>
-            <li><a href="/rules.html" className="hover:text-purple-400">Rules</a></li>
-            <li><a href="/streams.html" className="hover:text-purple-400">Streams</a></li>
-            <li><a href="/showcase.html" className="hover:text-purple-400">Showcase</a></li>
-            <li><a href="/support.html" className="hover:text-purple-400">About</a></li>
+            <li><a href="/rules" className="hover:text-purple-400">Rules</a></li>
+            <li><a href="/streams" className="hover:text-purple-400">Streams</a></li>
+            <li><a href="/showcase" className="hover:text-purple-400">Showcase</a></li>
+            <li><a href="/support" className="hover:text-purple-400">About</a></li>
           </ul>
         </nav>
       </header>

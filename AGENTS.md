@@ -21,7 +21,7 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```
 5. Lint PHP scripts:
    ```bash
-   php -l db.php posts.php send_email.php showcase.php
+   php -l db.php posts.php showcase.php
    ```
 6. Validate HTML markup using **tidy**:
    ```bash
@@ -55,3 +55,5 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
 - Access to `apt.llvm.org`, `security.ubuntu.com`, `archive.ubuntu.com`, or any
   other necessary domain is allowed for installing dependencies and tools. The
   agent may run privileged commands as needed to complete its tasks.
+- Access to `discord.gg` is also allowed via `curl` and other commands for
+  verifying invite links or retrieving data from the DIVERSION RP Discord.

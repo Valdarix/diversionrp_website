@@ -1,6 +1,6 @@
 # Diversion RP Website
 
-Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack. All legacy HTML pages (home, contact, rules, streams, showcase and support) are now implemented as React components served by Laravel.
+Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack. The old static HTML pages (home, contact, rules, streams, showcase and support) have been removed and replaced with React components served by Laravel routes.
 
 ## Build CSS
 ```bash
@@ -11,7 +11,7 @@ pnpm run build --dir diversionrp-laravel
 
 ## PHP Lint
 ```bash
-php -l db.php posts.php send_email.php showcase.php
+php -l db.php posts.php showcase.php
 ```
 
 ### Laravel Migration
