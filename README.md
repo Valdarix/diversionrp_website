@@ -1,6 +1,6 @@
 # Diversion RP Website
 
-Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack.
+Static website with PHP scripts and Tailwind CSS. A lightweight SQLite database powers dynamic announcements. Phase 3 begins the move to a Laravel + React stack. All legacy HTML pages (home, contact, rules, streams, showcase and support) are now implemented as React components served by Laravel.
 
 ## Build CSS
 ```bash
@@ -16,9 +16,12 @@ php -l db.php posts.php send_email.php showcase.php
 
 ### Laravel Migration
 The repository now contains a Laravel 11 skeleton under `diversionrp-laravel`.
-Install its dependencies and run the default tests:
+Install its dependencies, generate the application key and run the default tests:
 ```bash
 pnpm install --dir diversionrp-laravel
+composer install --working-dir=diversionrp-laravel
+cp diversionrp-laravel/.env.example diversionrp-laravel/.env
+php artisan key:generate --working-dir=diversionrp-laravel
 cd diversionrp-laravel && php artisan test
 ```
 To develop the React frontend run:

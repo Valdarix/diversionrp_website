@@ -34,6 +34,9 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    Then install dependencies:
    ```bash
    pnpm install --dir diversionrp-laravel
+   composer install --working-dir=diversionrp-laravel
+   cp diversionrp-laravel/.env.example diversionrp-laravel/.env
+   php artisan key:generate --working-dir=diversionrp-laravel
    ```
 8. Run Laravel tests:
    ```bash
