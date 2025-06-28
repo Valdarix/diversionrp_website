@@ -11,6 +11,9 @@ importers:
       '@heroui/react':
         specifier: 2.8.0-beta.10
         version: 2.8.0-beta.10(framer-motion@12.19.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(tailwindcss@4.1.11)
+      framer-motion:
+        specifier: ^12.19.2
+        version: 12.19.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react:
         specifier: 18.2.0
         version: 18.2.0
