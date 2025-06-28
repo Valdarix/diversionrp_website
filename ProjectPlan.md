@@ -21,7 +21,7 @@ This document outlines the current features and future development of the DIVERS
    - Introduced a simple SQLite database and a `posts.php` page for announcements.
    - PHP backend serves dynamic pages using the new database helper.
 3. **Phase 3** *(in progress)*
-   - Create a fresh Laravel 11 skeleton and commit initial configuration.
+   - **Completed** creation of a Laravel 11 skeleton under `diversionrp-laravel`.
    - Integrate React 18 through Vite and migrate static pages into components.
    - Upgrade Tailwind CSS to version 4 and adopt HeroUI components.
    - Keep existing PHP pages operational until the new stack fully replaces them.

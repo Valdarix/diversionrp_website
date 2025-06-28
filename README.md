@@ -14,9 +14,10 @@ php -l db.php posts.php send_email.php showcase.php
 ```
 
 ### Laravel Migration
-The new application will be scaffolded with Laravel 11 and React 18. Run the following once to generate the project:
+The repository now contains a Laravel 11 skeleton under `diversionrp-laravel`.
+Install its dependencies and run the default tests:
 ```bash
-composer create-project laravel/laravel diversionrp-laravel
 pnpm install --dir diversionrp-laravel
+cd diversionrp-laravel && php artisan test
 ```
-After installing, execute Laravel tests with `php artisan test` inside the new directory. See `Conversion.md` for detailed steps.
+See `Conversion.md` for detailed migration steps.

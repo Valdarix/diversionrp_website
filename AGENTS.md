@@ -23,9 +23,12 @@ This repository contains the static web site for DIVERSION RP. Keep this file up
    ```bash
    tidy -qe *.html
    ```
-6. Scaffold the upcoming Laravel application:
+6. The Laravel skeleton lives in `diversionrp-laravel`. If missing, scaffold it:
    ```bash
    composer create-project laravel/laravel diversionrp-laravel
+   ```
+   Then install dependencies:
+   ```bash
    pnpm install --dir diversionrp-laravel
    ```
 7. Run Laravel tests:
